@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sekur.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div class="wrapper">
+      <nav>
+        <div class="container-flex">
+          <div class="brand">
+            <h1>SECURITY</h1>
+          </div>
+          <div class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="bg-sidebar"></div>
+          <ul class="sidebar">
+            <li><a href="" class="home">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Web Security -->
+    <header>
+      <div class="container">
+        <div class="grid1">
+          <div class="foto1">
+            <img src="websekur.png" />
+          </div>
+          <div class="text1">
+            <h1>Web Security</h1>
+            <p>Web security refers to the protective measures and protocols that organizations adopy to protect the organization from, cyber criminals and threats that use the web channel</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- testi -->
+    <div class="box">
+      <div class="container">
+        <div class="testi">
+          <div class="testi1">
+            <img src="testi1.jpg" />
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem cumque numquam tempora, non doloribus aliquam rerum sequi dolorum pariatur tempore iste fugit aperiam molestiae nulla voluptatem cupiditate quas at beatae?</p>
+          </div>
+          <div class="testi2">
+            <img src="testi2.jpg" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quisquam reiciendis necessitatibus nostrum adipisci nesciunt perferendis? Unde esse cumque iure ad, iusto odio adipisci maiores, nisi commodi at voluptatibus
+              ut!
+            </p>
+          </div>
+          <div class="testi3">
+            <img src="testi3.jpg" />
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo soluta voluptatibus, totam obcaecati architecto officia autem veniam omnis nisi impedit iusto odit expedita veritatis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- gallery -->
+    <div class="box2">
+      <div class="container">
+        <div class="gallery">
+          <h1>Gallery</h1>
+          <div class="fotobanyak">
+            <div class="gambar1"><img src="1.jpg" /></div>
+            <div class="gambar2"><img src="2.jpg" /></div>
+            <div class="gambar3"><img src="3.jpg" /></div>
+            <div class="gambar4"><img src="4.jpg" /></div>
+            <div class="gambar5"><img src="5.jpg" /></div>
+            <div class="gambar6"><img src="6.jpg" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Maintenance -->
+    <div class="box3">
+      <div class="container">
+        <div class="maintenance">
+          <div class="tulisan">
+            <h1>Web Maintenance</h1>
+            <p>Website maintenance is the practice of monitoring your website's overall health and performance. Keeping a website up to date is crucial to ensuning it's working at full capacity. Enganging and retaining site visitors.</p>
+          </div>
+          <div class="fotomaintenance">
+            <img src="webmain.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- need help -->
+    <div class="box4">
+      <div class="container">
+        <div class="help">
+          <h1>Need Help?</h1>
+
+          <form action="">
+            <label for="username"><b>Username</b></label> <input type="text" name="username" id="username" />
+
+            <label for="email"><b>Email</b></label> <input type="text" name="email" id="email" />
+
+            <label for="password"><b>Password</b></label> <input type="password" name="password" id="password" />
+
+            <label for="massage" class="massage"><b>Your Massage</b></label> <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+
+            <button type="button"><b>KIRIM</b></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2022.by Husni Januarsyah</p>
+    </footer>
+    <!-- JS -->
+    <script>
+      const burger = document.querySelector(".burger");
+      const sidebar = document.querySelector(".sidebar");
+      const bgSidebar = document.querySelector(".bg-sidebar");
+      burger.addEventListener("click", function () {
+        this.classList.toggle("change");
+        sidebar.classList.toggle("change");
+        bgSidebar.classList.toggle("change");
+      });
+      bgSidebar.addEventListener("click", function () {
+        this.classList.remove("change");
+        sidebar.classList.remove("change");
+        burger.classList.remove("change");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,299 @@
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
+  color: white;
+}
+.navbar-brand {
+  font-family: sans-serif;
+  font-size: 28px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(itb.jpg);
+  background-size: cover;
+  height: 640px;
+  position: relative;
+}
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+.jumbotron .display-4 {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+.jumbotron .lead {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+}
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+body.page .site-content,
+body.single .site-content,
+body.search-no-results .site-content {
+  max-width: 1060px;
+  position: relative;
+}
+div.site-content,
+table {
+  overflow: visible !important;
+}
+.site-content {
+  position: relative;
+  border: 1px solid;
+  border-color: #dadada;
+  -webkit-box-shadow: 0 2px 5px rgb(0 0 0 / 11%);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 11%);
+  border-radius: 6px;
+  border-collapse: collapse;
+  background: #ffffff;
+  padding: 25px;
+  max-width: 1060px;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.site-content h1 {
+  text-align: center;
+  padding-top: 1em;
+}
+.site-content p {
+  text-align: justify;
+  max-width: 90%;
+  margin-left: 3em;
+  padding-bottom: 3em;
+}
+.display-5 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.display-6 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.display-7 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.display-8 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.lead1 {
+  text-align: center;
+  color: white;
+  margin-top: 4em;
+}
+.lead2 {
+  text-align: center;
+  color: white;
+  margin-top: 4em;
+}
+.lead3 {
+  text-align: center;
+  color: white;
+  margin-top: 4em;
+}
+.lead4 {
+  text-align: center;
+  color: white;
+  margin-top: 4em;
+}
+.rpljumbotron-fluid {
+  background-image: url(programer.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 40em;
+  height: 20em;
+  padding-top: 2em;
+}
+.amjumbotron-fluid {
+  background-image: url(animator.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 40em;
+  height: 20em;
+  padding-bottom: 3em;
+}
+.mmjumbotron-fluid {
+  background-image: url(editor.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 40em;
+  height: 20em;
+}
+.tkjjumbotron-fluid {
+  background-image: url(teknisi.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 40em;
+  height: 20em;
+}
+/* gallery */
+.box2 {
+  padding-bottom: 3.5em;
+}
+.gallery h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding-top: 1em;
+}
+.fotobanyak {
+  display: grid;
+  grid-template-areas:
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6";
+}
+.fotobanyak img {
+  width: 21em;
+  height: 15em;
+  border-radius: 100px;
+  margin: 0.5em;
+  box-shadow: 0 0 3px 3px rgba(255, 238, 238, 0.5);
+}
+.gambar1 {
+  grid-area: foto1;
+}
+.gambar2 {
+  grid-area: foto2;
+}
+.gambar3 {
+  grid-area: foto3;
+}
+.gambar4 {
+  grid-area: foto4;
+}
+.gambar5 {
+  grid-area: foto5;
+}
+.gambar6 {
+  grid-area: foto6;
+}
+.box4 {
+  padding-bottom: 2em;
+}
+.help {
+  padding: 3em 2em;
+  border-radius: 15px;
+  box-shadow: 3px 1px 5px 2px rgba(0, 0, 0, 0.5);
+  width: 63em;
+  height: 25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.help h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 0 1em 0;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.kontak {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* mobile Version */
+@media (max-width: 900px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: 400;
+  }
+  .jumbotron {
+    margin-top: -20px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 70px;
+  }
+  .jumbotron .lead {
+    font-size: 25px;
+  }
+
+  .navbar-light .navbar-brand {
+    color: white;
+    font-weight: 400;
+  }
+  .box2 {
+    padding-bottom: 5em;
+    margin-top: -2.3em;
+  }
+  .gallery h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-top: 1em;
+  }
+  .fotobanyak {
+    display: grid;
+    grid-template-areas:
+      "foto1 foto2"
+      "foto3 foto4"
+      "foto5 foto6";
+  }
+  .fotobanyak img {
+    width: 90%;
+    height: 90%;
+    border-radius: 100px;
+    margin: 0.9em;
+    box-shadow: 0 0 3px 3px rgba(255, 238, 238, 0.5);
+  }
+  .gambar1 {
+    grid-area: foto1;
+  }
+  .gambar2 {
+    grid-area: foto2;
+  }
+  .gambar3 {
+    grid-area: foto3;
+  }
+  .gambar4 {
+    grid-area: foto4;
+  }
+  .gambar5 {
+    grid-area: foto5;
+  }
+  .gambar6 {
+    grid-area: foto6;
+  }
+  .help {
+    padding: 3em 2em;
+    border-radius: 15px;
+    box-shadow: 3px 1px 5px 2px rgba(0, 0, 0, 0.5);
+    width: 25em;
+    height: 25em;
+  }
+}
